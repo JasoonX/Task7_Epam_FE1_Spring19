@@ -1,0 +1,686 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  font-size: 16px;
+}
+
+
+body {
+  background: #B6B6B6;
+  background: -webkit-linear-gradient(bottom left, #B6B6B6, #FFFFFF);
+  background: -webkit-gradient(linear, left bottom, right top, from(#B6B6B6), to(#FFFFFF));
+  background: -o-linear-gradient(bottom left, #B6B6B6, #FFFFFF);
+  background: linear-gradient(to top right, #B6B6B6, #FFFFFF);
+  background-color: #ffffff;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='0' %3E%3Crect fill='%23F5F5F5' x='-60' y='-60' width='110' height='240'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.pizzas {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  width: 70rem;
+  grid-gap: 3rem;
+  -ms-grid-columns: 1fr 3rem 1fr 3rem 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  color: #1a1a1a;
+}
+
+.pizzaList {
+  width: 70rem;
+}
+
+.pizza {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #EF424C;
+  background: #41CFF9;
+  background: -webkit-linear-gradient(bottom left, #41CFF9, #693CF9);
+  background: -webkit-gradient(linear, left bottom, right top, from(#41CFF9), to(#693CF9));
+  background: -o-linear-gradient(bottom left, #41CFF9, #693CF9);
+  background: linear-gradient(to top right, #41CFF9, #693CF9);
+  border-radius: 20px;
+  opacity: 1;
+  height: 45rem;
+  -webkit-box-shadow: 0px 0.3rem 2rem rgba(105, 60, 249, 0.8);
+  box-shadow: 0px 0.3rem 2rem rgba(105, 60, 249, 0.8);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+}
+
+.pizzaInsideGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 90%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+  align-content: space-evenly;
+  margin: 10% auto;
+  background: white;
+  /* IE6-9 */
+}
+
+.pizzaListItem {
+  background: white;
+  /* IE6-9 */
+  border-radius: 10px;
+  margin: 3rem;
+  width: 100%;
+  -webkit-box-shadow: 0px 0.3rem 1.2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0.3rem 1.2rem rgba(0, 0, 0, 0.5)
+}
+
+img {
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0.3rem 0.8rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0.3rem 0.8rem rgba(0, 0, 0, 0.5);
+
+}
+
+h2 {
+  line-height: 2rem;
+  padding: 1.5rem 0px 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px 10px 0px 0px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h4 {
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+h4:first-child {
+  color: #693CF9;
+}
+
+h4:last-child {
+  color: #41CFF9;
+}
+
+
+.btn {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: 0px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  -webkit-box-shadow: 0px 0.3rem 0.8rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0.3rem 0.8rem rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0px 0.6rem 1.3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0.6rem 1.3rem rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.grid {
+  color: white;
+  background: -webkit-linear-gradient(bottom left, #41CFF9, #693CF9);
+}
+
+.list {
+  background: transparent;
+
+}
+
+.logo {
+  width: 10rem;
+  height: 6.5rem;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.priceAndCaloriesGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-top: auto;
+  background: #FFFFFF;
+  margin-bottom: 2.5rem;
+}
+
+.pizzaMade {
+  background: #FFFFFF;
+  line-height: 2rem;
+  font-weight: 200;
+  height: 50%;
+  width: 80%;
+  margin: auto;
+  color: #1a1a1a;
+}
+
+h1 {
+  text-align: center;
+  font-size: 6rem;
+  background: -webkit-linear-gradient(bottom left, #41CFF9, #693CF9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.madeCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  background: #693CF9;
+}
+
+.madeCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+option {
+  font-size: 1rem;
+}
+
+select {
+  font-size: 1rem;
+}
+
+.change {
+  position: relative;
+  top: -1rem;
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: auto;
+  color: white;
+}
+
+.pizza:hover .pizzaInsideGrid {
+  background: #1a1a1a;
+}
+
+.pizza:hover .pizzaInsideGrid h2 {
+  color: white;
+}
+
+.pizza:hover {
+  -webkit-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+  -webkit-box-shadow: 0px 1.3rem 2.5rem #693CF9;
+  box-shadow: 0px 1.3rem 2.5rem #693CF9;
+}
+
+.pizza:hover p {
+  background: transparent;
+  color: white;
+}
+
+.pizzaInsideGrid button {
+  background: -webkit-gradient(linear, left bottom, right top, from(#41CFF9), to(#693CF9));
+  background: -webkit-linear-gradient(bottom left, #41CFF9, #693CF9);
+  background: -o-linear-gradient(bottom left, #41CFF9, #693CF9);
+  background: linear-gradient(to top right, #41CFF9, #693CF9);
+  color: white;
+  margin: 0.3rem;
+}
+
+.madeConts {
+  background: transparent;
+  position: relative;
+}
+
+.priceAndCaloriesGrid {
+  background: transparent;
+}
+
+.sortContainerHidden {
+  position: fixed;
+  top: 10%;
+  right: -50%;
+}
+
+.filterContainerHidden {
+  position: fixed;
+  top: 10%;
+  left: -50%;
+  -webkit-transition: left 0.5s reverse ease-in-out;
+  -o-transition: left 0.5s reverse ease-in-out;
+  transition: left 0.5s reverse ease-in-out;
+}
+
+.filterContainer,
+.sortContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 25rem;
+  height: 30rem;
+  top: 50%;
+  margin-top: -15rem;
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0px 100% 100% 0px;
+  -webkit-box-shadow: 0px 0.3rem 0.8rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0.3rem 0.8rem rgba(0, 0, 0, 0.2);
+  -webkit-animation: blur 1s ease-in-out;
+  animation: blur 1s ease-in-out;
+}
+
+.filterContainer {
+  left: -15%;
+  -webkit-transition: left 0.5s ease-in-out;
+  -o-transition: left 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out;
+}
+
+.sortContainer {
+  right: -15%;
+  -webkit-transition: right 0.5s ease-in-out;
+  -o-transition: right 0.5s ease-in-out;
+  transition: right 0.5s ease-in-out;
+  border-radius: 100% 0px 0px 100%;
+}
+
+.filterContainer:hover {
+  left: 0%;
+}
+
+.filterContainer h2,
+.sortContainer h2 {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(bottom left, #41CFF9, #693CF9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sortContainer button {
+  width: 9.6rem;
+  height: 4.8rem;
+  /*background: -webkit-linear-gradient(bottom left, #41CFF9, #693CF9);
+  */
+  background: white;
+  color: #1a1a1a;
+}
+
+.sortContainer button:nth-child(n+3) {
+  background: #1a1a1a;
+  color: white;
+}
+
+.filterContainer button {
+  background: white;
+}
+
+.filter {
+  padding: 0.6rem;
+  margin: 0.6rem;
+}
+
+.filter .btn {
+  margin: 0.6rem;
+}
+
+.headerLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 42rem;
+  height: 42rem;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: white;
+  -webkit-transition: -webkit-box-flex 0.3s ease;
+  transition: -webkit-box-flex 0.3s ease;
+  -o-transition: flex 0.3s ease;
+  transition: flex 0.3s ease;
+  transition: flex 0.3s ease, -webkit-box-flex 0.3s ease, -ms-flex 0.3s ease;
+  -webkit-box-shadow: 0px 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  -webkit-animation: blur 1s ease-in-out;
+  animation: blur 1s ease-in-out;
+}
+
+.pizzas {
+  margin: 6rem auto;
+}
+
+.headerBtns {
+  width: 100%;
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.headerRight {
+  display: none;
+}
+
+input,
+select {
+  width: 50%;
+  border-radius: 0.6rem;
+  border: 0px;
+  background: #1a1a1a;
+  color: white;
+  -webkit-box-shadow: 0px 0.3rem 0.6rem rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0.3rem 0.6rem rgba(0, 0, 0, 0.8)
+}
+
+.madeBtn {
+  border: 0px;
+  border-radius: 0.3rem;
+  padding: 0.6rem;
+  font-size: 1rem;
+  -webkit-box-shadow: 0px 0px 0px #693CF9;
+  box-shadow: 0px 0px 0px #693CF9;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+}
+
+.madeBtn:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  -webkit-box-shadow: 0px 0.3rem 0.6rem rgba(65, 199, 240, 0.5);
+  box-shadow: 0px 0.3rem 0.6rem rgba(65, 199, 240, 0.5);
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.hide {
+  display: none;
+}
+
+.madeBtnConfirm {
+  background: #FFFFFF;
+  color: rgb(53, 166, 201);
+}
+
+.filterInputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sortContainerBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.sortContainer:hover {
+  right: 0%;
+}
+
+.sortContainerBtns,
+.filterInputs,
+.filterContainer button {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.sortContainer:hover .sortContainerBtns,
+.filterContainer:hover .filterInputs,
+.filterContainer:hover button {
+  opacity: 1;
+}
+
+.filterRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+select {
+  height: 2rem;
+  width: 80%;
+  margin: 0px 0px 1rem;
+}
+
+label {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+@-webkit-keyframes blur {
+  from {
+    -webkit-filter: blur(0.6rem);
+    filter: blur(0.6rem)
+  }
+
+  to {
+    -webkit-filter: blur(0px);
+    filter: blur(0px)
+  }
+}
+
+@keyframes blur {
+  from {
+    -webkit-filter: blur(0.6rem);
+    filter: blur(0.6rem)
+  }
+
+  to {
+    -webkit-filter: blur(0px);
+    filter: blur(0px)
+  }
+}
+
+@media screen and (min-width: 250px) {
+  html {
+    font-size: 1px;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  html {
+    font-size: 2px;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  html {
+    font-size: 3px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  html {
+    font-size: 21px;
+  }
+}
