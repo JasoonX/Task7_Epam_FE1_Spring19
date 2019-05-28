@@ -105,7 +105,7 @@ let showElements = (containerClass, hasPizzaCont = null, elemClass, hasPizzaPic 
         madeBtns.appendChild(btnDelete);
       })
       e.target.parentNode.querySelector(".pizzaInsideGrid").replaceChild(madeBtns, e.target.parentNode.querySelector(".pizzaMade"));
-    } 
+    }
   })
   for (let i = 0; i < namesArg.length; i++) {
     if (hasPizzaCont) {
@@ -432,19 +432,4 @@ function bindSelects() {
       filterPizzas();
     })
   })
-}
-
-function onChangeAddFilter(uniqueShortMade, e) {
-  let newFilter = document.createElement("select");
-  newFilter.setAttribute("class", "filterValues");
-  uniqueShortMade.forEach((uniqueMadeValue) => {
-    option = document.createElement("option");
-    option.innerText = uniqueMadeValue.charAt(0).toUpperCase() + uniqueMadeValue.slice(1);
-    newFilter.appendChild(option);
-  })
-  let newLabel = document.createElement("label");
-  newLabel.innerText = "Choose a value:";
-  newFilter.addEventListener("change", bindSelects);
-  e.target.after(newFilter);
-  e.target.after(newLabel);
 }
